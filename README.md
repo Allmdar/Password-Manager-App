@@ -29,11 +29,17 @@ I set up the window using Tk() package and then the canvas by setting up the dim
 
 I also used the canvas.config() object Class to allow whitespaces between the window and the canvas. Moreover, I set up the label using the Label() class. A label can be added with two lines of text. The first line defines the label and the text. The second line sets the two dimensional position using the .grid() method (explained in detail later on). The entry widget, next to the labels, is supposed to accept single-line text from a user. The syntax of displaying the entry widget is as follows -> w = Entry(master,option) where master represents the parent window and the options represents the key value pairs separated by the commas.
 
+I also set up each button using the Button() Class. Each button was linked to a command which tells the button what command it should perform once each button is clicked.
 
 
+In the generate password button, which is linked to the generatepassword() function, inserts the third entry with a new password. The syntax for inserting the text is as follows -> entry.insert(0, END) -> END indicates the text that needs to be added as a string. Also, the pyperclip.copy() object class was used in the function as it allows the user to paste the password generated.
+
+In the add button, which is linked to the addpassword() function uses the .get() object class to get the methods and then add it using the with open() function so that the data can be added using an f string and then deleted using the .delete() object class once it is added so that the user can keep on adding more password information if they need to ![image](https://user-images.githubusercontent.com/76918821/209278010-7dd48d2d-62ee-4b0a-bcb1-cb6aedc39dd8.png)
+
+### This is how I implemented the *grids and columns* to organize each button, label and entry so that a structure is maintained ###
 
 
-
+<img width="550" alt="Screen Shot 2022-12-23 at 12 42 43 AM" src="https://user-images.githubusercontent.com/76918821/209278271-84c4845f-5d0b-4611-8b17-8ff3116fb696.png">
 
 
 
