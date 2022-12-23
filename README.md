@@ -27,8 +27,7 @@ With the above in mind, my program helps users solve the problem of helping them
 I set up the window using Tk() package and then the canvas by setting up the dimensions (width and height) using the Canvas() Class. I then displayed the image on the Canvas by calling the ImageTk.PhotoImage(Image.open()) Object Class.
 
 
-I also used the canvas.config() object Class to allow whitespaces between the window and the canvas. Moreover, I set up the label using the Label() class. A label can be added with two lines of text. The first line defines the label and the text. The second line sets the two dimensional position using the .grid() method (explained in detail later on). The entry widget, next to the labels, is supposed to accept single-line text from a user. The syntax of displaying the entry widget is as follows -> w = Entry(master,option) where master represents the parent window and the options represents the key value pairs separated by the commas.![image](https://user-images.githubusercontent.com/76918821/209250314-e36250d3-9532-407b-b985-7572b1a60222.png)
-
+I also used the canvas.config() object Class to allow whitespaces between the window and the canvas. Moreover, I set up the label using the Label() class. A label can be added with two lines of text. The first line defines the label and the text. The second line sets the two dimensional position using the .grid() method (explained in detail later on). The entry widget, next to the labels, is supposed to accept single-line text from a user. The syntax of displaying the entry widget is as follows -> w = Entry(master,option) where master represents the parent window and the options represents the key value pairs separated by the commas.
 
 
 
