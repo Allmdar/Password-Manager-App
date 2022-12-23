@@ -40,6 +40,15 @@ In the add button, which is linked to the addpassword() function uses the .get()
 
 <img width="550" alt="Screen Shot 2022-12-23 at 12 42 43 AM" src="https://user-images.githubusercontent.com/76918821/209278271-84c4845f-5d0b-4611-8b17-8ff3116fb696.png">
 
+The columns and rows can be represented using the canvas.grid (row,column) object class.
+
+*If the user leaves any of the entries blank, this is what happens*
+
+
+<img width="485" alt="Screen Shot 2022-12-23 at 12 47 12 AM" src="https://user-images.githubusercontent.com/76918821/209278900-af429d19-9b96-432a-aa93-eda0e16e53f0.png">
+
+
+
 
 
 
