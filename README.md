@@ -34,7 +34,8 @@ I also set up each button using the Button() Class. Each button was linked to a 
 
 In the generate password button, which is linked to the generatepassword() function, inserts the third entry with a new password. The syntax for inserting the text is as follows -> entry.insert(0, END) -> END indicates the text that needs to be added as a string. Also, the pyperclip.copy() object class was used in the function as it allows the user to paste the password generated.
 
-In the add button, which is linked to the addpassword() function uses the .get() object class to get the methods and then add it using the with open() function so that the data can be added using an f string and then deleted using the .delete() object class once it is added so that the user can keep on adding more password information if they need to ![image](https://user-images.githubusercontent.com/76918821/209278010-7dd48d2d-62ee-4b0a-bcb1-cb6aedc39dd8.png)
+In the add button, which is linked to the addpassword() function uses the .get() object class to get the methods and then add it using the with open() function so that the data can be added using an f string and then deleted using the .delete() object class once it is added so that the user can keep on adding more password information if they need to.
+
 ### This is how I implemented the *grids and columns* to organize each button, label and entry so that a structure is maintained ###
 
 <img width="550" alt="Screen Shot 2022-12-23 at 12 42 43 AM" src="https://user-images.githubusercontent.com/76918821/209278271-84c4845f-5d0b-4611-8b17-8ff3116fb696.png">
