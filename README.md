@@ -42,10 +42,22 @@ In the add button, which is linked to the addpassword() function uses the .get()
 
 The columns and rows can be represented using the canvas.grid (row,column) object class.
 
-*If the user leaves any of the entries blank, this is what happens*
+**If the user leaves any of the entries blank, this is what happens**
 
 
 <img width="485" alt="Screen Shot 2022-12-23 at 12 47 12 AM" src="https://user-images.githubusercontent.com/76918821/209278900-af429d19-9b96-432a-aa93-eda0e16e53f0.png">
+
+I implemented the pop-up by using the def addpassword() function, which fetched the data from each entry using the .get() method and then checks if one of the entries is empty using an if-statement and displays the pop-up using the messagebox.showinfo() object Class to display the pop-up, urging the user to enter the information otherwise the data won’t be added to the password_list.txt file.
+
+The user is also asked if they would like to continue using the application once they entered the information correctly and reinsures them that the data was added. I did this using the .askyesno from the messagebox module, which displays a message to the user and kills the program (.destroy() object class) based on the button clicked using an if-statement.
+
+<img width="522" alt="Screen Shot 2022-12-23 at 12 49 38 AM" src="https://user-images.githubusercontent.com/76918821/209279151-37f13f57-2196-46ec-bb45-a40fbc96da45.png">
+
+You can implement the show password feature by using the Checkbutton() class and then associate a command with it which shows the password. This function uses the .cget() method class which will receive the entry value by its name. So, the function basically gets the entry data from the password field and checks if it shows ‘*’. If it does, it shows ‘ ’ as soon as the show password button is clicked. This is once again done using the if-statement and uses the .config() object class to change what is shown in the entry to the user.
+
+
+<img width="522" alt="Screen Shot 2022-12-23 at 12 49 38 AM" src="https://user-images.githubusercontent.com/76918821/209279233-282373e5-2227-4776-9d4c-e38aed46bf5d.png">
+
 
 
 
