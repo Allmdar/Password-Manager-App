@@ -24,36 +24,36 @@ With the above in mind, my program helps users solve the problem of helping them
 <img width="416" alt="Screen Shot 2022-12-22 at 7 58 12 PM" src="https://user-images.githubusercontent.com/76918821/209250245-355e77e1-03c7-499a-8468-ecb1f2d7f4f4.png">
 
 
-I set up the window using Tk() package and then the canvas by setting up the dimensions (width and height) using the Canvas() Class. I then displayed the image on the Canvas by calling the ImageTk.PhotoImage(Image.open()) Object Class.
+I set up the window using **Tk()** package and then the canvas by setting up the dimensions (width and height) using the **Canvas()** Class. I then displayed the image on the Canvas by calling the **ImageTk.PhotoImage(Image.open())** Object Class.
 
 
-I also used the canvas.config() object Class to allow whitespaces between the window and the canvas. Moreover, I set up the label using the Label() class. A label can be added with two lines of text. The first line defines the label and the text. The second line sets the two dimensional position using the .grid() method (explained in detail later on). The entry widget, next to the labels, is supposed to accept single-line text from a user. The syntax of displaying the entry widget is as follows -> w = Entry(master,option) where master represents the parent window and the options represents the key value pairs separated by the commas.
+I also used the **canvas.config()** object Class to allow whitespaces between the window and the canvas. Moreover, I set up the label using the *Label()* class. A label can be added with two lines of text. The first line defines the label and the text. The second line sets the two dimensional position using the .grid() method (explained in detail later on). The entry widget, next to the labels, is supposed to accept single-line text from a user. The syntax of displaying the entry widget is as follows -> *w = Entry(master,option)* where **master** represents the parent window and the **options** represents the key value pairs separated by the commas.
 
-I also set up each button using the Button() Class. Each button was linked to a command which tells the button what command it should perform once each button is clicked.
+I also set up each button using the **Button()** Class. Each button was linked to a *command* which tells the button what command it should perform once each button is clicked.
 
 
-In the generate password button, which is linked to the generatepassword() function, inserts the third entry with a new password. The syntax for inserting the text is as follows -> entry.insert(0, END) -> END indicates the text that needs to be added as a string. Also, the pyperclip.copy() object class was used in the function as it allows the user to paste the password generated.
+In the **generate password button**, which is linked to the **generatepassword()** function, inserts the third entry with a new password. The syntax for inserting the text is as follows -> *entry.insert(0, END)* -> END indicates the text that needs to be added as a string. Also, the **pyperclip.copy()** object class was used in the function as it allows the user to paste the password generated.
 
-In the add button, which is linked to the addpassword() function uses the .get() object class to get the methods and then add it using the with open() function so that the data can be added using an f string and then deleted using the .delete() object class once it is added so that the user can keep on adding more password information if they need to.
+In the *add button*, which is linked to the **addpassword()** function uses the .get() object class to get the methods and then add it using the with **open()** function so that the data can be added using an f string and then deleted using the *.delete()* object class once it is added so that the user can keep on adding more password information if they need to.
 
 ### This is how I implemented the *grids and columns* to organize each button, label and entry so that a structure is maintained ###
 
 <img width="550" alt="Screen Shot 2022-12-23 at 12 42 43 AM" src="https://user-images.githubusercontent.com/76918821/209278271-84c4845f-5d0b-4611-8b17-8ff3116fb696.png">
 
-The columns and rows can be represented using the canvas.grid (row,column) object class.
+The columns and rows can be represented using the **canvas.grid (row,column)** object class.
 
 **If the user leaves any of the entries blank, this is what happens**
 
 
 <img width="485" alt="Screen Shot 2022-12-23 at 12 47 12 AM" src="https://user-images.githubusercontent.com/76918821/209278900-af429d19-9b96-432a-aa93-eda0e16e53f0.png">
 
-I implemented the pop-up by using the def addpassword() function, which fetched the data from each entry using the .get() method and then checks if one of the entries is empty using an if-statement and displays the pop-up using the messagebox.showinfo() object Class to display the pop-up, urging the user to enter the information otherwise the data won’t be added to the password_list.txt file.
+I implemented the pop-up by using the **def addpassword()** function, which fetched the data from each entry using the **.get()** method and then checks if one of the entries is empty using an if-statement and displays the pop-up using the **messagebox.showinfo()** object Class to display the pop-up, urging the user to enter the information otherwise the data won’t be added to the **password_list.txt file**.
 
-The user is also asked if they would like to continue using the application once they entered the information correctly and reinsures them that the data was added. I did this using the .askyesno from the messagebox module, which displays a message to the user and kills the program (.destroy() object class) based on the button clicked using an if-statement.
+The user is also asked if they would like to continue using the application once they entered the information correctly and reinsures them that the data was added. I did this using the **.askyesno from the messagebox module**, which displays a message to the user and kills the program **(.destroy() object class)** based on the button clicked using an if-statement.
 
 <img width="522" alt="Screen Shot 2022-12-23 at 12 49 38 AM" src="https://user-images.githubusercontent.com/76918821/209279151-37f13f57-2196-46ec-bb45-a40fbc96da45.png">
 
-You can implement the show password feature by using the Checkbutton() class and then associate a command with it which shows the password. This function uses the .cget() method class which will receive the entry value by its name. So, the function basically gets the entry data from the password field and checks if it shows ‘*’. If it does, it shows ‘ ’ as soon as the show password button is clicked. This is once again done using the if-statement and uses the .config() object class to change what is shown in the entry to the user.
+You can implement the show password feature by using the **Checkbutton()** class and then associate a command with it which shows the password. This function uses the *.cget()* method class which will receive the entry value by its name. So, the function basically gets the entry data from the password field and checks if it shows ‘*’. If it does, it shows ‘ ’ as soon as the show password button is clicked. This is once again done using the if-statement and uses the *.config()* object class to change what is shown in the entry to the user.
 
 
 <img width="522" alt="Screen Shot 2022-12-23 at 12 49 38 AM" src="https://user-images.githubusercontent.com/76918821/209279233-282373e5-2227-4776-9d4c-e38aed46bf5d.png">
